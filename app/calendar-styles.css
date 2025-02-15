@@ -1,0 +1,88 @@
+.rbc-calendar {
+  font-family: "Arial", sans-serif;
+  background-color: transparent;
+  padding: 0;
+}
+
+.rbc-header {
+  padding: 10px 3px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #497174;
+  background-color: transparent;
+}
+
+.rbc-date-cell {
+  padding: 5px;
+  text-align: center;
+  color: inherit;
+}
+
+.rbc-event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+}
+
+.rbc-event-content {
+  width: 100%;
+  text-align: center;
+}
+
+.rbc-today {
+  background-color: #eb6440 !important;
+  color: white;
+}
+
+.rbc-off-range-bg {
+  background-color: #f8f8f8;
+}
+
+.rbc-month-view {
+  border: 1px solid #ddd;
+}
+
+.rbc-toolbar {
+  background-color: transparent;
+}
+
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #497174;
+  --rdp-background-color: #d6e4e5;
+  --rdp-accent-color-dark: #3a5468;
+  --rdp-background-color-dark: #eff5f5;
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 2px solid var(--rdp-accent-color);
+}
+
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+  background-color: var(--rdp-accent-color);
+  color: white;
+}
+
+.rdp-day_today {
+  background-color: #eb6440;
+  color: white;
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-day {
+  color: #497174;
+}
+
+.rdp-day_outside {
+  color: #a0aec0;
+}
+
+.rdp-head_cell {
+  color: #497174;
+  font-weight: bold;
+}
