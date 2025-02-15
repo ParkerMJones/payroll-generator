@@ -1,10 +1,9 @@
 import type { MetaFunction } from "@remix-run/node";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { DateRange } from "react-day-picker";
 import CSVGenerator from "~/components/csv-generator";
 import DateRangePicker from "~/components/date-range-picker";
 import HighlightedCalendar from "~/components/highlighted-calendar";
-import { getDefaultDateRange } from "~/utils";
 import "~/calendar-styles.css";
 
 export const meta: MetaFunction = () => {
