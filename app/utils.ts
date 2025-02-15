@@ -98,6 +98,7 @@ export function generateCSV(startDate: Date, endDate: Date) {
 }
 
 export function calculateTotalHours(startDate: Date, endDate: Date): number {
-  const businessDays = differenceInBusinessDays(endDate, startDate) + 1;
-  return businessDays * 9.5; // 9.5 hours per day (including 30 min break)
+  const days = eachDayOfInterval({ start: startDate, end: endDate });
+  const weekdays = days.filter((day) => !isWeekend(day)).length;
+  return weekdays * 9.5;
 }
